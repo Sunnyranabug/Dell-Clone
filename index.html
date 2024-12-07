@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index html </title>
+    <link rel="stylesheet" href="dell.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+        <div class="header_left">
+            <div><img src="dell-removebg-preview.png" alt=""width=190px></div>
+            <div class="search"><input type="text" placeholder="Search Dell"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="header_right">
+            <div class="Sign"><i class="fa-regular fa-user"></i> &nbsp;Sign In <i class="fa-solid fa-angle-down"></i>
+              <div class="Sign_menu">
+              <h3>Welcome to Dell</h3>
+              <br>
+              <br>
+              <h4> My Account</h4>
+              
+              <div class="ul">
+                <li>Place orders quickly and easily</li>
+                <li>View order and track your shipping status</li>
+                <li>Create and access a list of your products</li>
+            </div>
+
+                <div class="button">
+                <input type="button" value="Sign In">
+                
+                <input type="button" value="Create an Account">
+                
+                <input type="button" value="Premier Sign In">
+                
+                <input type="button" value="Partner Partner Sign In">
+
+
+              </div>
+
+
+    
+
+              </div>
+            
+            </div>
+            <div><i class="fa-solid fa-headphones"></i> &nbsp;Contact Us<i class="fa-solid fa-angle-down"></i></div>
+            <div><i class="fa-solid fa-globe"></i> &nbsp;IN/EN</div>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> &nbsp; Cart <i class="fa-solid fa-angle-down"></i> <div class="cart_menu">
+                <b>Your Dell.com Carts</b>
+                <p>Your cart is empty</p>
+            </div></div>
+        </div>
+
+    </div>
+     <!--====== header for tablet======= -->
+        <div class="header_tablet">
+            <div class="header_tablet_left">
+                <div><i class="fa-solid fa-bars" onclick="Canvas()"></i></div>
+                <div><img src="chota_dell-removebg-preview.png" alt="" width="60px"></div>
+            </div>
+            <div class="header_tablet_mid">
+                <input type="search" name="Search Dell" id="" placeholder="Search Dell"><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header_tablet_right">
+                <div><i class="fa-regular fa-user"></i></div>
+                <div><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+
+            <div class="bar_menu">
+                <div>Artificial intelligence</div>
+                <div onclick="ProductOpen()" >Products <i class="fa-solid fa-angle-right"  ></i>
+                <div class="product_inside" >
+                    <div onclick="ProductClose(event)" >back <i class="fa-solid fa-xmark"  ></i> </div>
+                    <h3>Products</h3>
+                    <div>Laptops</div>
+                    <div>Desktop &All in Ones</div>
+                    <div>Gaming</div>
+                    <div>Workstation</div>
+                    <div>Thin Clients</div>
+                    <div>Servers</div>
+                </div></div>
+                <div>Solutions</div>
+                <div>Services</div>
+                <div>Support</div>
+                <div>Deals</div>
+                <div>Find a Store</div>
+            </div> 
+        </div>
+        <div class="dropdown" onclick="Canvas()"></div>
+        
+    </header>
+                 <!--====== header for tablet finish======= --> 
+     <nav class="nav">
+        <ul>
+            <li>Artificial Intelligence</li>
+            <li class="products">Products <i class="fa-solid fa-angle-down"></i>
+            <div class="products_menu">
+                <div class="laptops">Laptops  <i class="fa-solid fa-angle-right"></i>
+                    <div class="laptops_menu">
+                        <p>For Home</p>
+                        <p>For Bussiness</p>
+                    </div>
+                
+                
+                </div>
+                <div class="Desktop">Desktop & All-in-Ones<i class="fa-solid fa-angle-right"></i>
+                    <div class="Desktop_menu">
+                        <p>For Home</p>
+                        <p>For Bussiness</p>
+                    </div>
+                </div>
+                <div class="Gaming">Gaming <i class="fa-solid fa-angle-right"></i>
+                  <div class="Gaming_menu">
+                    <p>Alienware</p>
+                    <p>Dell Gaming</p>
+                    <p>Alienware Laptops</p>
+                    <p>Alienware Desktops </p>
+                    <p>G Series Laptops </p>
+                    <p>Gaming Accessories</p>
+
+
+                  </div>
+                </div>
+
+                <div>Workstation</div>
+                <div>Thin Clients</div>
+                <div>APEX</div>
+                <div>Servers</div>
+                <div>Data Storage </div>
+                <div>Data Protection</div>
+                <div>Networking </div>
+                <div>Hyperconverged Infrastructure </div>
+                <div>Monitors <i class="fa-solid fa-angle-right"></i></div>
+                <div>Electronics & Accessories<i class="fa-solid fa-angle-right"></i></div>
+            </div></li>
+            <li>Services <i class="fa-solid fa-angle-down"></i></li>
+            <li>Solution<i class="fa-solid fa-angle-down"></i></li>
+            <li>Supports<i class="fa-solid fa-angle-down"></i></li>
+            <li>Deals<i class="fa-solid fa-angle-down"></i></li>
+            <li>Find a Store</li>
+        </ul>
+    </nav>
+
+    <!-- ----------+++++++++++++++     FORM     +++++++++------------------ -->
+    <Div class="dropdownf">
+        <div class="form">
+             <div class="Icon"> Register Yourself <i class="fa-regular fa-circle-xmark" onclick="Form()"></i></div>
+    
+            <div>Name* <br>
+            <input type="text" class="InputN" placeholder="Enter Your Name" oninput="validation()"><p class="error"></p>  </div>
+    
+            <div>Phone num* <br> 
+            <input type="tel" class="InputP" placeholder="Phone Number" oninput="ValPhn()"> <p class="errorP"></p></div>
+    
+            <div>Email*  <br> 
+            <input type="email" class="InputE" placeholder="Enter Your Email" oninput="ValEmail()"><p class="EError"></p></p></div>
+    
+            <div>Password* <br> 
+            <input type="password" name="" id="" class="InputPS" placeholder="Password"></div>
+    
+            <button class="ButtonF">Submit</button>
+        </div>
+    </Div>
+
+
+    <!-- =====================   CAROUSEL    ============================= -->
+
+    <div class="carousel">
+        <div class="carousel-inner">
+            
+            
+            <div class="carousel-item"><img src="dell 5.webp" alt=""></div>
+            <div class="carousel-item"><img src="dell 4.avif" alt=""></div>
+            <div class="carousel-item"><img src="dell 6.png" alt=""></div>
+        </div>
+        <button class="prev" >&#10094;</button>
+        <button class="next" >&#10095;</button>
+    </div>
+
+    <!-----------------==================       product section 1        ==============---------->
+
+    <section class="product_section">
+        <div class="card">
+            <div class=" pro_image_1">
+                <div class="heart" ><i class="fa-solid fa-heart" onclick="like(0)" ></i></div>
+                <div class="kart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+
+        <div>
+            <b>Gaming performance</b> <br>
+            <span>starting at $69,990.00</span>
+        </div>
+
+        </div>
+               <!-- ========product section 2========= -->
+
+        <div class="card">
+            <div class=" pro_image_2">
+                <div class="heart" ><i class="fa-solid fa-heart" onclick="like(1)"></i></div>
+                <div class="kart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+
+        <div>
+            <b>Gaming performance</b> <br>
+            <span>starting at $69,990.00</span>
+        </div>
+         <!-- ========product section 3========= -->
+
+        </div><div class="card">
+            <div class=" pro_image_3">
+                <div class="heart" ><i class="fa-solid fa-heart" onclick="like(2)"></i></div>
+                <div class="kart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+
+        <div>
+            <b>Gaming performance</b> <br>
+            <span>starting at $69,990.00</span>
+        </div>
+         <!-- ========product section 4========= -->
+
+        </div><div class="card">
+            <div class=" pro_image_4">
+                <div class="heart" ><i class="fa-solid fa-heart" onclick="like(3)"></i></div>
+                <div class="kart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+
+        <div>
+            <b>Gaming performance</b> <br>
+            <span>starting at $69,990.00</span>
+        </div>
+
+        </div>
+        <!-- ========product section 5========= -->
+        <div class="card">
+            <div class=" pro_image_5">
+                <div class="heart"><i class="fa-solid fa-heart"  onclick="like(4)"></i></div>
+                <div class="kart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+
+        <div>
+            <b>Gaming performance</b> <br>
+            <span>starting at $69,990.00</span>
+        </div>
+
+           <!-- ========product section 6========= -->
+        </div><div class="card">
+            <div class=" pro_image_6">
+                <div class="heart" ><i class="fa-solid fa-heart" onclick="like(5)"></i></div>
+                <div class="kart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+
+        <div>
+            <b>Gaming performance</b> <br>
+            <span>starting at $69,990.00</span>
+        </div>
+
+        <!-- ========product section 7========= -->
+
+        </div><div class="card">
+            <div class=" pro_image_7">
+                <div class="heart" ><i class="fa-solid fa-heart" onclick="like(6)"></i></div>
+                <div class="kart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+
+        <div>
+            <b>Gaming performance</b> <br>
+            <span>starting at $69,990.00</span>
+        </div>
+
+        <!-- ========product section 8========= -->
+
+        </div><div class="card">
+            <div class=" pro_image_8">
+                <div class="heart" ><i class="fa-solid fa-heart" onclick="like(7)"></i></div>
+                <div class="kart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+
+        <div>
+            <b>Gaming performance</b> <br>
+            <span>starting at $69,990.00</span>
+        </div>
+
+        </div>
+
+
+    </section>
+
+    <!--==================blue part=================================-->
+
+    <section class="section_blue">
+
+        <div class="section_blue_up">
+            <div class="section_blue_up1">
+                <div><img src="BLUE.jpg" alt="" width="175px" height="100%"></div>
+            </div>
+                <div class="section_blue_up2">
+                    <span>Customers report Dell APEX drives more efficient and <br> effective IT operations with upto:</span> <br> <br>
+                    <p>Explore Business valure of Dell APEX</p>
+                </div>
+
+                <div class="section_blue_up3">
+                    <div class="percent">
+                        <div class="per64">0%</div>
+                        <p >Faster to Display <br> new capacity<p>
+                    </div>
+                    <div class="percent">
+                        <div class="per39">0%</div>
+                        <p>lower 3 year cost <br> of operations<p>
+                    </div> 
+                    <div class="percent">
+                        <div class="per59">0%</div>
+                        <p>reduce of unplanned  <br> outages per year<p>
+                    </div>
+                    
+                    
+                </div>
+
+            
+        </div>
+
+
+        <div class="section_blue_dwn">
+            <div class="section_blue_dwn1">
+                <div>See Dell APEX workloads and industry use cases</div> <br> <br>
+                <div>Explore Use Cases-></div>
+            </div>
+            <div class="section_blue_dwn2">
+                <div>Implement and strategize with Dell APEX value-added services</div> <br> <br>
+
+                <div>Explore Professional Services for Dell APEX-></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ----------+++++++++++++++++++                FAQ's SECTION          ++++++++++++++++----------------------- -->
+
+    <div class="AllFAQ"> 
+        <div class="TagFAQ">FAQ's</div>
+    <div class="FAQ" onclick="acc (0)">
+        <h3 >1. How do I track my Dell order?</h3>
+        <p>Go to the Dell Order Status page and enter your order number and email to view the latest updates on your order. </p>
+    </div>
+
+    <div class="FAQ"  onclick="acc (1)">
+        <h3>2. What is Dell’s return policy?</h3>
+        <p>Dell offers a 30-day return policy for most products. To initiate a return, visit the “Order Status” page or contact Dell Customer Support for assistance. Make sure the product is in its original condition and packaging.</p>
+    </div>
+
+    <div class="FAQ" onclick="acc (2)">
+        <h3 >3. How do I get technical support for my Dell product?</h3>
+        <p> For technical support, visit the Dell Support website and enter your service tag or product details. You can access troubleshooting guides, driver updates, or chat with a support agent.
+        </p>
+    </div>
+
+    <div class="FAQ" onclick="acc (3)">
+        <h3 >4. What warranty options are available for Dell products?</h3>
+        <p>Dell offers various warranty options including Standard, ProSupport, and Premium Support. Details about each plan are available on the “Warranty & Services” page of the Dell website.</p>
+    </div>
+
+    <div class="FAQ" onclick="acc (4)">
+        <h3 >5. How can I upgrade or customize my Dell PC?</h3>
+        <p>To upgrade or customize your Dell PC, visit the “Customize & Buy” section of the Dell website. You can choose from different configurations for components such as memory, storage, and graphics.
+
+        </p>
+    </div>
+</div>
+
+          <!-- ===========================footer========================== -->
+           
+          <div class="footer">
+            <div class="footc1">
+                <div>Home</div>
+                <div>About</div>
+                <div>Store Locator</div>
+                <div>Contact Us</div>
+            </div>
+            <div class="footc2">
+                <div>Terms & Conditions</div>
+                <div>Returns Policy</div>
+                <div>Privacy policy</div>
+                <div>Track Your Order </div>
+                <div>Return & Exchange</div> 
+            </div>
+            <div class="footc3">
+                <div>Support/Whatsapp: <a href="tel">+91 9876543210</a></div>
+                <div>info <a href="mailto:@dell.in">@dell.in</a></div>
+                <div><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-youtube"></i></div>
+            </div>
+            <div class="footc4">
+                <div>Sign Up Newsletter</div>
+                <div>Get updates by subscribe <br> our weekly newsletter</div>
+                <div> <input type="email" name="" id="" placeholder="Enter your email"> <input type="button" value="Subscribe"></div>
+            </div>
+        </div>
+
+        
+
+    <script src="dell.js"></script>
+</body>
+</html>
+        

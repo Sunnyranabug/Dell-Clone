@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        header {
+            display: flex;
+            border: 1px solid black;
+            gap: 2rem;
+            background-color: aquamarine;
+            padding: 10px;
+            font-size: 1.5rem;
+
+        }
+        .bar_menu{
+            position: absolute;
+            background-color: rgb(55, 128, 103);
+            height: 100vh;
+            width: 15%;
+            top: 3rem;
+            left: -17rem;
+            padding: 15px;
+            line-height: 3rem;
+            transition: 0.8s;
+        }
+        .bar_menu_show {
+            left: 0;
+        }
+        .trnsprnt {
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(1,1,1,0.2);
+            display: none;
+        }
+        .trnsprnt_show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><i class="fa-solid fa-bars" onclick="canvas()"></i></div>
+        <div>Products</div>
+        <div>Solutions</div>
+        <div>Services</div>
+        <div>Support</div>
+        <div>Deals</div>
+    
+    <div class="bar_menu">
+        <div>Artificial intelligence</div>
+        <div>Products</div>
+        <div>Solutions</div>
+        <div>Services</div>
+        <div>Support</div>
+        <div>Deals</div>
+        <div>Find a Store</div>
+    </div> 
+   </header>
+   <div class="trnsprnt" onclick="canvas()"></div>
+   <script>
+    function canvas () {
+        document.querySelector(".bar_menu").classList.toggle("bar_menu_show")
+        document.querySelector(".trnsprnt").classList.toggle("trnsprnt_show")
+    }
+   </script>
+</body>
+</html>
